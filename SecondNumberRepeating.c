@@ -5,14 +5,13 @@ int Search(int a[], int b, int n);
 
 int main()
 {
-    int a[] = { 2, 2,1,1, 3, 2, 5, 6, 2, 7, 7, 6};
+    int a[] = {2, 2, 1, 1, 3, 2, 5, 6, 2, 7, 7, 6};
 
     int n = sizeof(a) / sizeof(a[0]);
 
-    int re[n],j=0;
+    int re[n], j = 0;
 
     int count = 0, Secno = 0;
-    
 
     for (int i = 0; i < n; i++)
     {
@@ -30,10 +29,10 @@ int main()
             break;
         }
     }
-     
-    for(int i=0;i<n;i++)
+
+    for (int i = 0; i < n; i++)
     {
-        printf("%d  ",re[i]);
+        printf("%d  ", re[i]);
     }
 
     printf("\n\nthe second repeating no in the array is : %d", Secno);
